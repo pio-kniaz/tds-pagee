@@ -1,0 +1,86 @@
+.top {
+  border-top: 3px solid #00b5f9;
+}
+
+.top__inner {
+  text-align: center;
+}
+
+@media (min-width: 530px) {
+  .top__inner {
+    text-align: right;
+  }
+}
+
+.top__inner button {
+  height: 34px;
+  font-size: 12px;
+  color: black;
+  font-family: "Raleway";
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #00b5f9;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 530px) {
+  .top__inner button {
+    margin: -10px 25px 10px 0;
+    display: inline-block;
+  }
+}
+
+.top__right-container {
+  display: inline-block;
+}
+
+.top__login-title {
+  margin: 15px 0 0 0;
+  padding: 0;
+  font-size: 12px;
+  color: black;
+  font-family: "Raleway";
+  text-align: center;
+}
+
+.top__login-desc {
+  margin: 0;
+  font-size: 11px;
+  color: #6d6d6d;
+  font-family: "Raleway";
+  text-align: center;
+}
+
+@media (min-width: 530px) {
+  .top__login-desc {
+    text-align: right;
+  }
+}
+
+.navbar {
+  margin: 0;
+  background: #473f9b;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar a {
+  font-size: 14px;
+  line-height: 30px;
+  color: #150f49;
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+.navbar ul {
+  text-align: center;
+}
+
+@media (min-width: 990px) {
+  .navbar ul {
+    margin-right: 80px;
+  }
+}

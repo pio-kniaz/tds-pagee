@@ -1,1 +1,21 @@
+.navbar {
+  margin: 0;
+  background: #473f9b;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
+  a {
+    font-size: 14px;
+    line-height: 30px;
+    color: rgb(21, 15, 73);
+    font-family: "Raleway";
+    font-weight: bold;
+  }
+  ul {
+    text-align: center;
+
+    @media (min-width: 990px) {
+      margin-right: 80px;
+    }
+  }
+}
