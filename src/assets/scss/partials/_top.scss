@@ -4,6 +4,10 @@
     text-align: center;
     @media (min-width: 530px) {
       text-align: right;
+      // margin-right: 270px;
+    }
+    @media (min-width: 1010px) {
+      margin-right: 270px;
     }
     button {
       height: 34px;

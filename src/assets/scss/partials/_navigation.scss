@@ -10,12 +10,13 @@
     color: rgb(21, 15, 73);
     font-family: "Raleway";
     font-weight: bold;
+    margin: 0 8px;
   }
   ul {
     text-align: center;
 
     @media (min-width: 990px) {
-      margin-right: 80px;
+      margin-right: 120px;
     }
   }
 }
