@@ -1,0 +1,73 @@
+.funkcje {
+  background: #fff;
+  max-width: 1000px;
+  margin: -100px auto 0;
+  position: relative;
+
+  &__title {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+  &__inner {
+    max-width: 800px;
+    margin: auto;
+  }
+  &__wrapper {
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // padding-left: 200px;
+    // padding-right: 200px;
+  }
+  &__box {
+    // padding: 25px 5px;
+    align-self: flex-end;
+    flex-basis: 100%;
+    text-align: center;
+    p {
+      font-weight: bold;
+    }
+    img {
+      padding-top: 25px;
+    }
+
+    @media (min-width: 900px) {
+      flex-basis: 33%;
+    }
+    p {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 25px;
+      padding-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    &__box--beige {
+      padding-top: 35px;
+      background: #f4f4f4;
+    }
+    &__box-flex-end {
+      align-self: none;
+    }
+    &__description--gutter {
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+    &__description--top {
+      margin-bottom: 40px;
+    }
+  }
+}
