@@ -1,5 +1,4 @@
 .header {
-  //   background: green;
   min-height: 700px;
   background-image: url("../../assets/img/app_main_06.jpg");
   background-position: center;
@@ -19,15 +18,14 @@
     h1 {
       font-size: 1.6rem;
       color: rgb(255, 255, 255);
-      font-family: "Raleway";
-      font-weight: 100;
+      font-weight: 200;
       @media (min-width: 530px) {
         font-size: 2.7rem;
       }
       @media (min-width: 800px) {
         font-size: 4rem;
       }
-      @media (min-width: 1010px) {
+      @media (min-width: 1200px) {
         font-size: 100px;
       }
     }
@@ -52,8 +50,8 @@
       text-align: center;
       font-size: 16px;
       color: rgb(255, 162, 0);
-      font-family: "Raleway";
-      //   font-weight: bold;
+
+      font-weight: bold;
       @media (min-width: 1250px) {
         line-height: 55px;
       }
@@ -62,30 +60,5 @@
   &__wrapper {
     text-align: center;
     margin: 0;
-  }
-  &__bottom-title {
-    text-align: center;
-    margin: auto;
-    height: 36px;
-    font-size: 1.3rem;
-    line-height: 35px;
-    color: rgb(255, 255, 255);
-    font-family: "Raleway";
-    font-weight: bold;
-    text-align: center;
-    margin-top: 60px;
-    position: absolute;
-    top: 120%;
-    left: 50%;
-    transform: translate(-50%);
-    @media (min-width: 530px) {
-      font-size: 2rem;
-    }
-    @media (min-width: 800px) {
-      font-size: 2.2rem;
-    }
-    @media (min-width: 1010px) {
-      font-size: 36px;
-    }
   }
 }
