@@ -1,0 +1,11 @@
+.title__global {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  @media (min-width: 800px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 1010px) {
+    font-size: 36px;
+  }
+}

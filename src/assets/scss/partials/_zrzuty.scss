@@ -1,0 +1,77 @@
+.screenshot {
+  &__top {
+    background-image: url("../../assets/img/bg-zrzuty.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+    position: relative;
+  }
+  &__bottom {
+    background-image: url("../../assets/img/bg-zrzuty.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 45px 0;
+  }
+  &__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: auto;
+    text-align: center;
+  }
+  &__subtitle {
+    span {
+      display: block;
+    }
+    font-size: 1.3rem;
+    @media (min-width: 800px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1010px) {
+      font-size: 36px;
+    }
+  }
+  &__description {
+    font-size: 14px;
+    max-width: 420px;
+  }
+  &__phone {
+    z-index: 10000;
+  }
+  &__right-box {
+    position: relative;
+    img {
+      position: absolute;
+      top: 20px;
+    }
+  }
+  &__left-box {
+    text-align: center;
+    @media (min-width: 992px) {
+      text-align: left;
+    }
+  }
+  // middle
+  &__middle {
+    padding: 45px 0;
+  }
+  &__view-title {
+    font-weight: bold;
+  }
+  &__text {
+    font-size: 14px;
+  }
+  &__view-content {
+    text-align: center;
+    @media (min-width: 1010px) {
+      text-align: left;
+    }
+  }
+  &__view-box {
+    padding: 15px 0;
+  }
+}
