@@ -1,23 +1,34 @@
+main {
+}
 .funkcje {
-  background: #fff;
-  max-width: 1036px;
-  margin: -100px auto 0;
+  z-index: 0;
   position: relative;
-  padding-bottom: 130px;
+  &__inner {
+    background: #fff;
+    max-width: 1036px;
+    margin: -200px auto 0;
+    position: relative;
+    padding-bottom: 60px;
+  }
 
   &__title {
     position: absolute;
-    top: -30px;
+    top: -60px;
     left: 50%;
     transform: translate(-50%);
-    font-size: 1.2rem;
+
     text-align: center;
     font-weight: bold;
     color: white;
-  }
-  &__inner {
-    max-width: 800px;
-    margin: auto;
+    font-size: 1.35rem;
+    text-align: center;
+    font-weight: bold;
+    @media (min-width: 800px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1010px) {
+      font-size: 36px;
+    }
   }
   &__wrapper {
     align-content: center;
@@ -79,8 +90,7 @@
       margin-bottom: 40px;
     }
   }
+  &__slant {
+    display: none;
+  }
 }
-// .x {
-//   padding-top: 45px;
-//   margin-top: -10px;
-// }

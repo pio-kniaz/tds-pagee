@@ -10,6 +10,19 @@
     font-size: 36px;
   }
 }
+.title__global--white {
+  margin-top: 90px;
+  color: #fff;
+  font-size: 1.35rem;
+  text-align: center;
+  font-weight: bold;
+  @media (min-width: 800px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 1010px) {
+    font-size: 36px;
+  }
+}
 .title__global--left {
   @media (min-width: 576px) {
     text-align: left;

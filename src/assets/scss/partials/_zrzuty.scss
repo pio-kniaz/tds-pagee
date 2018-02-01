@@ -1,4 +1,5 @@
 .screenshot {
+  z-index: 10000;
   &__top {
     background-image: url("../../assets/img/bg-zrzuty.jpg");
     background-position: center;

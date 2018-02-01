@@ -96,8 +96,10 @@ body {
 .header {
   min-height: 700px;
   background-image: url("../../assets/img/app_main_06.jpg");
+  background-image: url("../../assets/img/bgbg.jpg");
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .header__inner {
@@ -181,42 +183,60 @@ body {
   margin: 0;
 }
 
+.header::after {
+  content: "";
+  position: absolute;
+}
+
 .product {
-  z-index: -100;
+  z-index: -1;
   margin-top: -100px;
   min-height: 600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../../assets/img/bg-produkt.jpg");
+  background-image: url("../../assets/img/bg-produkt1.jpg");
   text-align: center;
   position: relative;
-  overflow: hidden;
 }
 
 .funkcje {
+  z-index: 0;
+  position: relative;
+}
+
+.funkcje__inner {
   background: #fff;
   max-width: 1036px;
-  margin: -100px auto 0;
+  margin: -200px auto 0;
   position: relative;
-  padding-bottom: 130px;
+  padding-bottom: 60px;
 }
 
 .funkcje__title {
   position: absolute;
-  top: -30px;
+  top: -60px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  font-size: 1.2rem;
   text-align: center;
   font-weight: bold;
   color: white;
+  font-size: 1.35rem;
+  text-align: center;
+  font-weight: bold;
 }
 
-.funkcje__inner {
-  max-width: 800px;
-  margin: auto;
+@media (min-width: 800px) {
+  .funkcje__title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1010px) {
+  .funkcje__title {
+    font-size: 36px;
+  }
 }
 
 .funkcje__wrapper {
@@ -292,6 +312,14 @@ body {
   .funkcje__description--top {
     margin-bottom: 40px;
   }
+}
+
+.funkcje__slant {
+  display: none;
+}
+
+.screenshot {
+  z-index: 10000;
 }
 
 .screenshot__top {
@@ -424,6 +452,26 @@ body {
 
 @media (min-width: 1010px) {
   .title__global {
+    font-size: 36px;
+  }
+}
+
+.title__global--white {
+  margin-top: 90px;
+  color: #fff;
+  font-size: 1.35rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width: 800px) {
+  .title__global--white {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1010px) {
+  .title__global--white {
     font-size: 36px;
   }
 }
@@ -686,4 +734,20 @@ body {
 .footer {
   margin-top: -70px;
   padding-bottom: 100px;
+}
+
+.carousel {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -160px;
+}
+
+.carousel img {
+  max-width: 300px;
+  width: 200px;
+  height: 300px;
+  display: hidden;
+  text-align: center;
+  margin: auto;
 }
