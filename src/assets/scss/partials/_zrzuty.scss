@@ -3,9 +3,12 @@
     background-image: url("../../assets/img/bg-zrzuty.jpg");
     background-position: center;
     background-size: cover;
-    min-height: 400px;
+
     position: relative;
     position: relative;
+    @media (min-width: 992px) {
+      min-height: 400px;
+    }
   }
   &__bottom {
     background-image: url("../../assets/img/bg-zrzuty.jpg");
@@ -38,6 +41,11 @@
   &__description {
     font-size: 14px;
     max-width: 420px;
+    margin: auto;
+    @media (min-width: 992px) {
+      margin-left: 0;
+      text-align: left;
+    }
   }
   &__phone {
     z-index: 10000;
