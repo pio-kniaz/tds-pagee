@@ -1,4 +1,7 @@
 main {
+  @media (min-width: 992px) {
+    margin-top: -260px;
+  }
 }
 .funkcje {
   z-index: 0;
@@ -6,17 +9,11 @@ main {
   &__inner {
     background: #fff;
     max-width: 1036px;
-    margin: -200px auto 0;
+    margin: auto;
     position: relative;
     padding-bottom: 60px;
   }
-
   &__title {
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    transform: translate(-50%);
-
     text-align: center;
     font-weight: bold;
     color: white;
