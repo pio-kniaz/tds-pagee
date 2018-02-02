@@ -36,22 +36,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto ">
             <li class="nav-item active ">
-              <a class="nav-link active" href="#home">HOME
+              <a class="nav-link active" href="#home" id="s1">HOME
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#product">POZNAJ PRODUKT
+              <a class="nav-link" href="#product" id="s2">POZNAJ PRODUKT
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#function">FUNKCJE
+              <a class="nav-link" href="#function" id="s3">FUNKCJE
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#screenshot">ZRZUTY EKRANU
+              <a class="nav-link" href="#screenshot" id="s4">ZRZUTY EKRANU
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -113,7 +113,7 @@
 
     </span>
   </header>
-  <section class="product">
+  <section class="product notify">
     <div class="container">
       <img src="./assets/img/apps.png" alt="Example applications" class="img-fluid product__apps">
     </div>
@@ -151,32 +151,32 @@
       <h2 class=" funkcje__title">FUNKCJE APLIKACJI</h2>
       <div class="funkcje__inner">
         <div class="funkcje__wrapper">
-          <div class="funkcje__box">
-            <img src="./assets/img/box-top-lewo_08.png" alt="tablet" class="img-fluid">
+          <div class="funkcje__box feature-item">
+            <img src="./assets/img/box-top-lewo_08.png" alt="tablet" class="img-fluid ">
             <p>Zapis na treningi poprzez wysłanie linka do osoby przez sms lub email
             </p>
           </div>
-          <div class="funkcje__box funkcje__box--beige">
+          <div class="funkcje__box funkcje__box--beige feature-item">
             <img src=" ./assets/img/box-top-srodek.png " alt="tablet " class="img-fluid ">
             <p>Potwierdzenie treningow przez trenera za pomocą kliknięcia w link w sms</p>
           </div>
-          <div class="funkcje__box ">
+          <div class="funkcje__box feature-item">
             <img src="./assets/img/box-top-3_05.png " alt="tablet " class="img-fluid ">
             <p>Klient otrzymuje sms z informacją, że trening jest potwierdzony</p>
           </div>
         </div>
 
         <div class="funkcje__wrapper">
-          <div class="funkcje__box funkcje__box--beige">
+          <div class="funkcje__box funkcje__box--beige feature-item">
             <img src="./assets/img/box-middle-left_17.png" alt="tablet" class="img-fluid">
             <p class="funkcje__description funkcje__description--gutter ">Intuicyjny kalendarz dla trenera i klienta
             </p>
           </div>
-          <div class="funkcje__box">
+          <div class="funkcje__box feature-item">
             <img src=" ./assets/img/box-midle-srodek_19.png " alt="tablet " class="img-fluid ">
             <p class="mb-5">Prosty i przejrzysty wygląd – stawiamy na funkcjonalność</p>
           </div>
-          <div class="funkcje__box funkcje__box--beige x funkcje__box--pt">
+          <div class="funkcje__box funkcje__box--beige x funkcje__box--pt feature-item">
             <img src="./assets/img/box-middle-right_21.png" alt="tablet " class="img-fluid ">
             <p class="align">Zawiadom swoich klientów o urlopie lub promocjach za pomoca jednego kliknięcia</p>
 
@@ -184,16 +184,16 @@
         </div>
 
         <div class="funkcje__wrapper">
-          <div class="funkcje__box funkcje__box-flex-end">
+          <div class="funkcje__box funkcje__box-flex-end feature-item">
             <img src="./assets/img/box-bottom-left.png" alt="tablet" class="img-fluid">
             <p class="funkcje__description--top">Wysyłka e-maili i sms do przypisanych klientów
             </p>
           </div>
-          <div class="funkcje__box funkcje__box--beige">
+          <div class="funkcje__box funkcje__box--beige feature-item">
             <img src=" ./assets/img/box-bottom-middle.png" alt="tablet " class="img-fluid">
             <p class="">Używanie aplikacji nie wymaga wpisywania trudnych adresów do wyszukiwarki</p>
           </div>
-          <div class="funkcje__box ">
+          <div class="funkcje__box feature-item">
             <img src="./assets/img/box-bottom-right.png " alt="tablet " class="img-fluid ">
             <p class="funkcje__description--top">Przypisanie trenera do danego klubu fitness</p>
           </div>
@@ -378,7 +378,8 @@
   <script src="temp/js/jquery.min.js "></script>
   <script src="temp/js/popper.min.js "></script>
   <script src="temp/js/bootstrap.min.js "></script>
-  <script src="temp/js/app.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="temp/js/App1.js "></script>
 </body>
 
 </html>
