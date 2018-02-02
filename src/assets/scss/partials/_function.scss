@@ -38,9 +38,9 @@ main {
     max-width: 800px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    // padding-left: 200px;
-    // padding-right: 200px;
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+    }
   }
   &__box--pt {
     @media (min-width: 992px) {
