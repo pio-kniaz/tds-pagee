@@ -11,8 +11,8 @@
   <title>Bootstrap 4 Starter Pack</title>
 </head>
 
-<body id="home">
-  <div class="wrapper top fixed-top">
+<body id="home" class="page-section" data-matching-link="#s1">
+  <div class="wrapper top fixed-top" id="onTop">
     <div class="container top__inner">
       <button class="btn btn-outline-info ">WERSJA DEMO</button>
       <div class="top__right-container">
@@ -36,12 +36,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto ">
             <li class="nav-item active ">
-              <a class="nav-link active" href="#home" id="s1">HOME
+              <a class="nav-link" href="#home" id="s1">HOME
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#product" id="s2">POZNAJ PRODUKT
+              <a class="nav-link" href="#productt" id="s2">POZNAJ PRODUKT
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -56,7 +56,7 @@
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#contact">KONTAKT
+              <a class="nav-link" href="#contact" id="s5">KONTAKT
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -66,7 +66,7 @@
     </nav>
   </div>
 
-  <header class="header">
+  <header class="header ">
     <div class="container header__inner">
       <div class="row">
         <div class="col-lg-12  header__title">
@@ -75,7 +75,7 @@
         <div class="col-lg-3 col-md-6 header__wrapper">
           <div class=" header__box header__box--first">
             <span>
-              <img src="./assets/img/check.png" alt="">
+              <img src="./assets/img/check.png" alt="stamp">
             </span>
             <p>PLANUJ TRENINGI</p>
           </div>
@@ -83,7 +83,7 @@
         <div class="col-lg-3 col-md-6 header__wrapper">
           <div class=" header__box">
             <span>
-              <img src="./assets/img/check.png" alt="">
+              <img src="./assets/img/check.png" alt="stamp">
             </span>
             <p>ZARZADZAJ KLIENTAMI</p>
           </div>
@@ -91,7 +91,7 @@
         <div class="col-lg-3 col-md-6 header__wrapper">
           <div class=" header__box">
             <span>
-              <img src="./assets/img/check.png" alt="">
+              <img src="./assets/img/check.png" alt="stamp">
             </span>
             <p>TWÓRZ HARMONOGRAMY</p>
           </div>
@@ -99,7 +99,7 @@
         <div class="col-lg-3 col-md-6 header__wrapper">
           <div class="header__box header__box--last">
             <span>
-              <img src="./assets/img/check.png" alt="">
+              <img src="./assets/img/check.png" alt="stamp">
             </span>
             <p>OSIAGAJ WYNIKI</p>
           </div>
@@ -109,11 +109,11 @@
     </div>
     <p class="title__global--white" id="product">POZNAJ NASZ PRODUKT</p>
     <span class="text-center d-block">
-      <img src="./assets/img/v.png" alt="V" class="img-fluid">
+      <img src="./assets/img/v.png" alt="stamp" class="img-fluid">
 
     </span>
   </header>
-  <section class="product notify">
+  <section class="product page-section" data-matching-link="#s2" id="productt">
     <div class="container">
       <img src="./assets/img/apps.png" alt="Example applications" class="img-fluid product__apps">
     </div>
@@ -138,7 +138,7 @@
             <p>Dostaniesz powiadomienia o treningu przez SMS wraz z opisem ostatniego treningu i plan na kolejny.
             </p>
           </div>
-          <a href="#" class="btn">POBIERZ DEMO</a>
+          <a href="#" class="btn btn-outline-success">POBIERZ DEMO</a>
         </div>
       </div>
 
@@ -147,7 +147,7 @@
 
 
   <main>
-    <section class="funkcje" id="function">
+    <section class="funkcje page-section" id="function" data-matching-link="#s3">
       <h2 class=" funkcje__title">FUNKCJE APLIKACJI</h2>
       <div class="funkcje__inner">
         <div class="funkcje__wrapper">
@@ -157,18 +157,18 @@
             </p>
           </div>
           <div class="funkcje__box funkcje__box--beige feature-item">
-            <img src=" ./assets/img/box-top-srodek.png " alt="tablet " class="img-fluid ">
+            <img src=" ./assets/img/box-top-srodek.png " alt="Ok" class="img-fluid ">
             <p>Potwierdzenie treningow przez trenera za pomocą kliknięcia w link w sms</p>
           </div>
           <div class="funkcje__box feature-item">
-            <img src="./assets/img/box-top-3_05.png " alt="tablet " class="img-fluid ">
+            <img src="./assets/img/box-top-3_05.png " alt="mobile" class="img-fluid ">
             <p>Klient otrzymuje sms z informacją, że trening jest potwierdzony</p>
           </div>
         </div>
 
         <div class="funkcje__wrapper">
           <div class="funkcje__box funkcje__box--beige feature-item">
-            <img src="./assets/img/box-middle-left_17.png" alt="tablet" class="img-fluid">
+            <img src="./assets/img/box-middle-left_17.png" alt="calendar" class="img-fluid">
             <p class="funkcje__description funkcje__description--gutter ">Intuicyjny kalendarz dla trenera i klienta
             </p>
           </div>
@@ -177,7 +177,7 @@
             <p class="mb-5">Prosty i przejrzysty wygląd – stawiamy na funkcjonalność</p>
           </div>
           <div class="funkcje__box funkcje__box--beige x funkcje__box--pt feature-item">
-            <img src="./assets/img/box-middle-right_21.png" alt="tablet " class="img-fluid ">
+            <img src="./assets/img/box-middle-right_21.png" alt="tablet" class="img-fluid ">
             <p class="align">Zawiadom swoich klientów o urlopie lub promocjach za pomoca jednego kliknięcia</p>
 
           </div>
@@ -185,16 +185,16 @@
 
         <div class="funkcje__wrapper">
           <div class="funkcje__box funkcje__box-flex-end feature-item">
-            <img src="./assets/img/box-bottom-left.png" alt="tablet" class="img-fluid">
+            <img src="./assets/img/box-bottom-left.png" alt="customers" class="img-fluid">
             <p class="funkcje__description--top">Wysyłka e-maili i sms do przypisanych klientów
             </p>
           </div>
           <div class="funkcje__box funkcje__box--beige feature-item">
-            <img src=" ./assets/img/box-bottom-middle.png" alt="tablet " class="img-fluid">
+            <img src=" ./assets/img/box-bottom-middle.png" alt="tablet" class="img-fluid">
             <p class="">Używanie aplikacji nie wymaga wpisywania trudnych adresów do wyszukiwarki</p>
           </div>
           <div class="funkcje__box feature-item">
-            <img src="./assets/img/box-bottom-right.png " alt="tablet " class="img-fluid ">
+            <img src="./assets/img/box-bottom-right.png " alt="dumbbell" class="img-fluid ">
             <p class="funkcje__description--top">Przypisanie trenera do danego klubu fitness</p>
           </div>
         </div>
@@ -204,7 +204,7 @@
     </section>
   </main>
 
-  <section class="screenshot" id="screenshot">
+  <section class="screenshot page-section" id="screenshot" data-matching-link="#s4">
     <div class="screenshot__top">
       <div class="container">
         <h2 class="screenshot__title title__global">ZRZUTY EKRANU</h2>
@@ -289,7 +289,7 @@
 
   </section>
 
-  <section class="contact " id="contact">
+  <section class="contact page-section" id="contact" data-matching-link="#s5">
     <div class="container ">
       <h2 class="title__global ">KONTAKT</h2>
       <div class="row ">
@@ -335,7 +335,7 @@
       </div>
     </div>
   </section>
-  <section class="trial " id="trial ">
+  <section class="trial page-section" id="trial" data-matching-link="#tral-link">
     <div class="container ">
       <!-- 1 -->
       <div class="row ">
@@ -345,7 +345,7 @@
               <p class="trial__title ">ROK ZA DARMO</p>
               <p class="trial__description ">Masz pomysł na nową funkcjonalność która nam się spodoba – my ją wdrożymy, a Ty dostaniesz kolejny rok za darmo.
               </p>
-              <a href="# " class="btn trial__btn ">SPRAWDŹ SZCZEGÓŁY</a>
+              <a href="# " class="btn trial__btn btn-outline-info">SPRAWDŹ SZCZEGÓŁY</a>
             </div>
             <div class="col-md-6 trial__phone-box ">
               <!-- telefon -->
@@ -360,7 +360,7 @@
             <p class="trial__title--right ">
               <span>PRZETESTUJ </span> WERSJE DEMO</p>
             <p class=" trial__description--right ">Nie musisz podawac maila ani telefonu</p>
-            <a href="# " class="btn trial__btn--white ">POBIERZ DEMO</a>
+            <a href="# " class="btn trial__btn--white btn-outline-info">POBIERZ DEMO</a>
           </div>
         </div>
       </div>
@@ -369,7 +369,7 @@
   <footer class="footer ">
     <div class="container ">
       <span class="footer__logo ">
-        <img src="./assets/img/footer-logo.png " alt="Company Logo ">
+        <img src="./assets/img/footer-logo.png " alt="Company Logo">
       </span>
     </div>
   </footer>
