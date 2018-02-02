@@ -1,5 +1,9 @@
 .screenshot {
   z-index: 10000;
+  padding-top: 20px;
+  @media (min-width: 900px) {
+    padding-top: 60px;
+  }
   &__top {
     background-image: url("../../assets/img/bg-zrzuty.jpg");
     background-position: center;

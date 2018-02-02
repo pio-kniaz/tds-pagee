@@ -1,6 +1,9 @@
-#carouselContent {
+#carouselExampleIndicators {
   max-width: 300px;
   margin: 0 auto 10px auto;
+  @media (min-width: 485px) {
+    max-width: 360px;
+  }
   p {
     color: #fff;
     display: block;
@@ -15,7 +18,10 @@
       width: 10px;
     }
     li:active {
-      background: red;
+      background: orange;
     }
   }
+}
+.carousel-indicators .active {
+  background-color: orange;
 }

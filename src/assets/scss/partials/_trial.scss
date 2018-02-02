@@ -51,11 +51,22 @@
     }
   }
   &__description {
+    font-weight: 400;
     font-size: 18px;
     color: rgb(16, 22, 27);
     font-family: "Raleway";
     text-align: center;
     @media (min-width: 766px) {
+      text-align: left;
+    }
+  }
+  &__description--right {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(16, 22, 27);
+    font-family: "Raleway";
+    text-align: center;
+    @media (min-width: 992px) {
       text-align: left;
     }
   }
@@ -84,7 +95,7 @@
   &__btn--white {
     font-size: 16px;
     border-radius: 10px;
-    padding: 15px 10px;
+    padding: 15px 50px;
     box-shadow: 0 0 3px rgba(27, 22, 61, 0.22);
     background-image: linear-gradient(0deg, #ebebeb 0%, #ffffff 100%);
     color: rgb(27, 22, 61);
