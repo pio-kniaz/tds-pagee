@@ -671,11 +671,17 @@ body {
 }
 
 .trial {
-  margin: 100px 0;
+  margin-bottom: 100px;
   background-image: url("../../assets/img/bg-trial-clear.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .trial {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 992px) {
